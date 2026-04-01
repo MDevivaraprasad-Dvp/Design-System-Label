@@ -1,0 +1,51 @@
+.button-playground-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.button-container {
+  --button-bg-color: #4338ca;
+  --button-border-radius: 4px;
+  --button-items-gaps: 4px;
+  --button-vertical-padding: 10px;
+  --button-horizontal-padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-vertical-padding) var(--button-horizontal-padding);
+  gap: var(--button-items-gaps);
+  border-radius: var(--button-border-radius);
+  background: var(--button-bg-color);
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+  .button {
+    --button-font: normal 500 14px/20px "Noto Sans";
+    display: flex;
+    padding: 0 2px;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font: var(--button-font);
+    color: #fff;
+  }
+
+  .button-icon-left,
+  .button-icon-right {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 1.667px;
+    justify-content: center;
+    align-items: center;
+    fill: #fff;
+  }
+
+  &.button-primary {
+    --button-bg-color: #4338ca;
+  }
+}

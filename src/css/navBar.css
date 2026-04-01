@@ -1,0 +1,27 @@
+.nav-bar {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  height: 64px;
+  gap: 8px;
+  background-color: #ffffff; /* Change as needed */
+  padding: 12px 20px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar .label-container {
+  height: 36px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #4338ca;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.nav-bar .label-success:hover {
+  background-color: #15803d;
+  color: #fff;
+}
